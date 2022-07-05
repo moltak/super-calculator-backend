@@ -6,6 +6,9 @@ import { Calculated } from './calculated.entity';
 @Injectable()
 export class AppService {
   constructor(
+    /**
+     * Repository Pattern
+     */
     @InjectRepository(Calculated)
     private readonly repository: Repository<Calculated>,
   ) {}

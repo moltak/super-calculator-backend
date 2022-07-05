@@ -32,13 +32,9 @@ describe('AppController', () => {
   });
 
   describe('calc', () => {
-    it('더하기', () => {});
+    it('service에서 지원되지 않는 연산일때', () => {});
 
-    it('빼기', () => {});
-
-    it('곱하기', () => {});
-
-    it('나누기', () => {});
+    it('service에서 정상값이 반환됐을 때', () => {});
   });
 
   describe('records', () => {
