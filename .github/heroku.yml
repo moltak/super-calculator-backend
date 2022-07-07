@@ -1,0 +1,18 @@
+name: Heroku
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: 8c6d7948-f39f-415d-9ea5-bd3d0a1263a1
+          heroku_app_name: 'super-calculator-backend'
+          heroku_email: 'kooja@visang.com'
