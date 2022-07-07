@@ -3,7 +3,7 @@ name: Heroku
 on:
   push:
     branches:
-      - "main"
+      - "pr1"
   workflow_dispatch:
 
 jobs:
