@@ -19,4 +19,5 @@ export class AppController {
   }
 
 eslint() {}
+prettier() {}
 }
