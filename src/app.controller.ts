@@ -17,4 +17,5 @@ export class AppController {
   records(): Promise<CalcRecordsDto[]> {
     return this.appService.records();
   }
+  esling(){}
 }
