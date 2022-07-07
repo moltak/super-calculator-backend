@@ -1,0 +1,26 @@
+name: Jest
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  run-jest:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: read
+
+    name: jest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - uses: c-hive/gha-npm-cache@v1
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          test-script: npm run test:cov
