@@ -23,7 +23,7 @@ jobs:
         uses: creyD/prettier_action@v4.2
         continue-on-error: true
         with:
-          prettier_options: --check \"src/**/*.ts\" \"test/**/*.ts\"
+          prettier_options: --check src/**/*.ts test/**/*.ts
           dry: True
       - name: Save Code Linting Report JSON
         run: npm run lint:report
