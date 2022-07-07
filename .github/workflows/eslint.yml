@@ -30,3 +30,10 @@ jobs:
         with:
           name: eslint_report.json
           path: eslint_report.json
+
+      - name: Prettier Action
+        uses: creyD/prettier_action@v4.2
+        continue-on-error: true
+        with:
+          prettier_options: --check \"src/**/*.ts\" \"test/**/*.ts\"
+          dry: True
