@@ -6,7 +6,7 @@ import { Calculated } from './calculated.entity';
 
 describe('AppController', () => {
   let appController: AppController;
-  let repository = {};
+  const repository = {};
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
